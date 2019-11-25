@@ -2,7 +2,7 @@ import time
 from telegram.ext import Updater
 from telegram.ext import CommandHandler
 from telegram.ext import MessageHandler, Filters
-from handlers import *
+import handlers
 import config
 
 
@@ -11,12 +11,14 @@ updater = Updater(token=config.api_token, use_context=True)
 
 # Set handlers
 dispatcher = updater.dispatcher
-dispatcher.add_handler(CommandHandler('start', start))
-dispatcher.add_handler(MessageHandler(Filters.text, echo))
-dispatcher.add_handler(CommandHandler('caps', caps))
-dispatcher.add_handler(MessageHandler(Filters.command, unknown))
+dispatcher.add_handler(CommandHandler('start', handlers.start))
+dispatcher.add_handler(MessageHandler(Filters.text, handlers.answer))
+dispatcher.add_handler(CommandHandler('ask', handlers.configure))
+dispatcher.add_handler(MessageHandler(Filters.command, handlers.unknown))
 
 # Run
 updater.start_polling()
+print("Running...")
 time.sleep(30)
+print("Stopped.")
 updater.stop()

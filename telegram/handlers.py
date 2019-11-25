@@ -1,17 +1,22 @@
 def start(update, context):
     """Default /start message."""
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Hi, I'm Dr FAQ! Ask me anything! :)")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Hi, I'm Dr FAQ. Ask me anything! :)")
 
 
-def echo(update, context):
-    """Echo user's message."""
-    context.bot.send_message(chat_id=update.effective_chat.id, text=update.message.text)
+def answer(update, context):
+    """Replies the message."""
+    question = update.message.text
+    # TODO: NLP QUESTION ANSWERING
+    answer = "<TODO: ANSWER THE QUESTION>"
+    context.bot.send_message(chat_id=update.effective_chat.id, text=answer)
 
 
-def caps(update, context):
-    """/caps <message to return in caps>."""
-    text_caps = ' '.join(context.args).upper()
-    context.bot.send_message(chat_id=update.effective_chat.id, text=text_caps)
+def configure(update, context):
+    """/configure"""
+    text = ' '.join(context.args)
+    # TODO: CONFIGURATION SETTINGS
+    answer = "<TODO: ENABLE CONFIGURATION SETTINGS>"
+    context.bot.send_message(chat_id=update.effective_chat.id, text=answer)
 
 
 def unknown(update, context):
