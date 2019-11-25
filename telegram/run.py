@@ -3,11 +3,11 @@ from telegram.ext import Updater
 from telegram.ext import CommandHandler
 from telegram.ext import MessageHandler, Filters
 from handlers import *
+import config
 
 
 # Initialise
-token = "919334819:AAE0ZYaMbYThsD7Zlv1boNMIKv5BG7YC1WA"
-updater = Updater(token=token, use_context=True)
+updater = Updater(token=config.api_token, use_context=True)
 
 # Set handlers
 dispatcher = updater.dispatcher
