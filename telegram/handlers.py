@@ -1,15 +1,16 @@
 import re
 from manual_faq import ManualFAQ
+from chat import Chat
 
 
 manual_faq = ManualFAQ()
+chat = Chat()
 
 
 def start(update, context):
     """Default /start message."""
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Hi, I'm Dr FAQ. Ask me anything! :)\n" \
-                             + "Usage:\n" \
-                             + "/add_faq \"<question>\" \"<answer>\"")
+    context.bot.send_message(chat_id=update.effective_chat.id,
+                             text=chat.default('start'))
 
 
 def answer(update, context):
@@ -19,7 +20,7 @@ def answer(update, context):
     if manual_faq.query(question):
         answer = manual_faq.query(question)
     else:
-        answer = "<TODO: NLP-BASED ANSWER>"
+        answer = chat.nlp(question)
     context.bot.send_message(chat_id=update.effective_chat.id, text=answer)
 
 
@@ -36,18 +37,17 @@ def add_faq(update, context):
     text = re.split("\"", update.message.text)
 
     if len(text) != 5:
-        answer = "Invalid format. Usage: /add_faq \"<question>\" \"<answer>\""
+        reply = "Invalid format. Usage: /add_faq \"question\" \"answer\""
     else:
         question, answer = text[1], text[3]
 
         # Save question-answer in global manual_faq object
         if not manual_faq.query(question):
-            manual_faq.save(question, answer)
+            reply = manual_faq.save(question, answer)
+        else:
+            reply = "Question exists. Override: /override_faq \"question\" \"answer\""
 
-        answer = "FAQ saved. Try asking!\n" \
-            + "Question: \"" + text[1] + "\"\n" \
-            + "Answer: \"" + text[3] + "\"\n"
-    context.bot.send_message(chat_id=update.effective_chat.id, text=answer)
+    context.bot.send_message(chat_id=update.effective_chat.id, text=reply)
 
 
 def unknown(update, context):
