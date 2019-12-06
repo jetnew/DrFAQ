@@ -50,6 +50,12 @@ def add_faq(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text=reply)
 
 
+def help(update, context):
+    """/help"""
+    context.bot.send_message(chat_id=update.effective_chat.id,
+                             text=chat.default('help'))
+
+
 def unknown(update, context):
     """Unknown command."""
     context.bot.send_message(chat_id=update.effective_chat.id, text="Sorry, I didn't understand that command.")

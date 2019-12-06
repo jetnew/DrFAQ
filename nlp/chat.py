@@ -10,5 +10,8 @@ class Chat:
     def default(self, key):
         return self.default_chat.get_default_reply(key)
 
+    def help(self, key):
+        return self.default_chat.get_default_reply(key)
+
     def nlp(self, message):
         return self.nlp_chat.reply(message)

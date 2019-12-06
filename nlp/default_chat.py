@@ -2,6 +2,7 @@ class DefaultChat:
     def __init__(self):
         self.default = {
             'start': "Hi, I'm Dr FAQ. Ask me anything! :)\nUsage:\n/add_faq \"question\" \"answer\"",
+            'help': "Ask any question! You can add custom FAQs by using the command:\nUsage:\n/add_faq \"question\" \"answer\"",
         }
 
     def get_default_reply(self, key):

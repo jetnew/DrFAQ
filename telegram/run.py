@@ -17,6 +17,7 @@ dispatcher = updater.dispatcher
 dispatcher.add_handler(CommandHandler('start', handlers.start))
 dispatcher.add_handler(CommandHandler('configure', handlers.configure))
 dispatcher.add_handler(CommandHandler('add_faq', handlers.add_faq))
+dispatcher.add_handler(CommandHandler('help', handlers.help))
 dispatcher.add_handler(MessageHandler(Filters.text, handlers.answer))
 dispatcher.add_handler(MessageHandler(Filters.command, handlers.unknown))
 
