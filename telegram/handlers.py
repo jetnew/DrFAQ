@@ -35,7 +35,7 @@ def configure(update, context):
 def add_faq(update, context):
     """/add_faq '<question>' '<answer>'"""
     text = re.split("\"", update.message.text)
-
+    print(len(text))
     if len(text) != 5:
         reply = "Invalid format. Usage: /add_faq \"question\" \"answer\""
     else:
