@@ -1,6 +1,6 @@
 from default_chat import DefaultChat
 from nlp_chat import NLPChat
-from search.search import Search
+from elastic import Search
 
 
 class Chat:

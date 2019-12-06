@@ -1,6 +1,13 @@
 from elasticsearch import Elasticsearch
 import time
 
+"""
+Client: elasticsearch-7.5.0
+Ref: https://www.elastic.co/downloads/elasticsearch
+Python library: elasticsearch-7.1.0
+Ref: https://elasticsearch-py.readthedocs.io/en/master/
+"""
+
 
 class Search:
     def __init__(self):
