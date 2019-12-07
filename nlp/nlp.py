@@ -2,7 +2,7 @@ from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
 
-class NLPChat:
+class NLP:
     def __init__(self):
         self.chatbot = ChatBot('Ron Obvious')
         trainer = ChatterBotCorpusTrainer(self.chatbot)

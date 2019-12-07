@@ -1,4 +1,4 @@
-class DefaultChat:
+class Default:
     def __init__(self):
         self.default = {
             'start': "Hi, I'm Dr FAQ. Ask me anything! :)\nUsage:\n/add_faq \"question\" \"answer\"",

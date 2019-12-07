@@ -1,6 +1,6 @@
 import re
-from manual_faq import ManualFAQ
-from chat import Chat
+from bot.manual_faq import ManualFAQ
+from chat.chat import Chat
 
 
 manual_faq = ManualFAQ()
