@@ -15,12 +15,12 @@ def start(update, context):
 
 def answer(update, context):
     """Replies the message."""
-    question = update.message.text
+    message = update.message.text
     # TODO: NLP QUESTION ANSWERING
-    if manual_faq.query(question):
-        answer = manual_faq.query(question)
+    if manual_faq.query(message):
+        answer = manual_faq.query(message)
     else:
-        answer = chat.nlp(question)
+        answer = chat.reply(message)
     context.bot.send_message(chat_id=update.effective_chat.id, text=answer)
 
 

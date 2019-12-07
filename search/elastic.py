@@ -43,9 +43,22 @@ class Search:
             }
         })
         if verbose:
-            print("Searching:")
             for hit in res['hits']['hits']:
                 print(hit['_score'], hit['_source']['text'])
+
+        top_hit = res['hits']['hits']
+        if top_hit == []:
+            print("No search results.")
+            return None
+        else:
+            result = top_hit['_source']['text']
+            score = top_hit['_score']
+
+        print("Search score:", score)
+        if score > 0.5:
+            return result
+        else:
+            return None
 
 
 if __name__ == "__main__":

@@ -10,17 +10,26 @@ class QA:
     How does BERT answer questions?
     Ref: https://openreview.net/pdf?id=SygMXE2vAE
     """
-    def __init__(self):
+    def __init__(self, text_file):
         self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
         self.model = BertForQuestionAnswering.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')
+        with open(text_file, 'r') as file:
+            self.passage = file.read().replace('\n', ' ')
 
-    def load_passage(self, passage):
-        """Load reference passage for querying later."""
-        self.passage = passage
+    def ask(self, question, threshold=1.0):
+        """Ask question to QA."""
+        score, answer = self.query(question)
+        print("NLP score:", score)
 
-    def ask(self, question):
+        if score > threshold:
+            return answer
+        else:
+            return None
+
+    def query(self, question):
         """
-        Ask question with reference to the previously given passage.
+        Query question with reference to the previously given passage.
+        Returns (score, answer)
         Ref: https://huggingface.co/transformers/model_doc/bert.html#bertforquestionanswering
         """
         input_text = "[CLS] " + question + " [SEP] " + self.passage + " [SEP]"
@@ -43,9 +52,9 @@ if __name__ == "__main__":
     """Example"""
     qa = QA()
     qa.load_passage("School fees for one student cost $300 a month.")
-    score, answer = qa.ask("How much do the school fees cost?")
+    score, answer = qa.query("How much do the school fees cost?")
     print("Answer:", answer)
     print("Score:", score)
-    score, answer = qa.ask("How much discount is given for school fees?")
+    score, answer = qa.query("How much discount is given for school fees?")
     print("Answer:", answer)
     print("Score:", score)
