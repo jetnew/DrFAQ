@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94721f16-3905-4813-ac15-e0d85dc20492" name="Default Changelist" comment="Created README.md">
-      <change afterPath="$PROJECT_DIR$/bot/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/match/reference_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/match/similarity.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nlp/qa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/qa-chatbot.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/nlp/reference_file.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat/chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat/chat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat/default_chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat/default.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat/nlp_chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/nlp/nlp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/reference_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/search/reference_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sentence_tokenizer.pickle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegram/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegram/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/handlers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegram/manual_faq.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot/manual_faq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegram/sentence_tokenizer.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nlp/qa.py" beforeDir="false" afterPath="$PROJECT_DIR$/nlp/qa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <ignored path=".idea/" />
     <ignored path="telegram/config.py" />
@@ -36,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/bot/run.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -44,9 +29,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nlp/qa.py">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nlp/reference_file.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -56,6 +48,18 @@
               <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nlp/qa.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,15 +110,15 @@
         <option value="$PROJECT_DIR$/search/reference_file.py" />
         <option value="$PROJECT_DIR$/chat/default_chat.py" />
         <option value="$PROJECT_DIR$/chat/chat.py" />
-        <option value="$PROJECT_DIR$/nlp/qa.py" />
         <option value="$PROJECT_DIR$/nlp/nlp.py" />
+        <option value="$PROJECT_DIR$/nlp/qa.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -254,7 +258,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15730338" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20687376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -265,7 +269,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.14589235" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.36402267" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -389,7 +393,7 @@
     <entry file="file://$PROJECT_DIR$/bot/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -423,8 +427,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nlp/reference_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nlp/qa.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
