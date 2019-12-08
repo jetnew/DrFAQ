@@ -8,7 +8,6 @@ import logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                      level=logging.INFO)
 
-
 # Initialise
 updater = Updater(token=config.api_token, use_context=True)
 

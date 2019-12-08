@@ -51,8 +51,8 @@ class Search:
             print("No search results.")
             return None
         else:
-            result = top_hit['_source']['text']
-            score = top_hit['_score']
+            result = top_hit[0]['_source']['text']
+            score = top_hit[0]['_score']
 
         print("Search score:", score)
         if score > 0.5:

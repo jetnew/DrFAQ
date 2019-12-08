@@ -1,26 +1,31 @@
 import re
 from bot.manual_faq import ManualFAQ
-from chat.chat import Chat
-
+from chat.interface import ChatInterface
+from log.logger import Logger
 
 manual_faq = ManualFAQ()
-chat = Chat()
+chat_interface = ChatInterface()
+logger = Logger("../log/logbook.xlsx")
 
 
 def start(update, context):
     """Default /start message."""
     context.bot.send_message(chat_id=update.effective_chat.id,
-                             text=chat.default('start'))
+                             text=chat_interface.default_reply('start'))
 
 
 def answer(update, context):
     """Replies the message."""
-    message = update.message.text
-    # TODO: NLP QUESTION ANSWERING
+    message = update.message
     if manual_faq.query(message):
-        answer = manual_faq.query(message)
+        answer = manual_faq.query(message.text)
     else:
-        answer = chat.reply(message)
+        answer = chat_interface.reply(message.text)
+
+    logger.log([message.date,
+                message.from_user.username,
+                message.text,
+                answer])
     context.bot.send_message(chat_id=update.effective_chat.id, text=answer)
 
 
@@ -53,7 +58,7 @@ def add_faq(update, context):
 def help(update, context):
     """/help"""
     context.bot.send_message(chat_id=update.effective_chat.id,
-                             text=chat.default('help'))
+                             text=chat_interface.default('help'))
 
 
 def unknown(update, context):
