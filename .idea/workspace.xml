@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="94721f16-3905-4813-ac15-e0d85dc20492" name="Default Changelist" comment="Created README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +134,7 @@
       <updated>1574683632904</updated>
       <workItem from="1575711927256" duration="578000" />
       <workItem from="1575792049768" duration="6144000" />
-      <workItem from="1575815606336" duration="3493000" />
+      <workItem from="1575815606336" duration="3853000" />
     </task>
     <servers />
   </component>
@@ -186,10 +185,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1575816868948" />
-    <state x="417" y="67" key="SettingsEditor" timestamp="1575819002715">
+    <state x="417" y="67" key="SettingsEditor" timestamp="1575819309505">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="417" y="67" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1575819002715" />
+    <state x="417" y="67" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1575819309505" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/drfaq$run.coverage" NAME="run Coverage Results" MODIFIED="1575810034590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot/" />
