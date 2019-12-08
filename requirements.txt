@@ -10,8 +10,7 @@ cryptography==2.8
 cymem==2.0.3
 docutils==0.15.2
 elasticsearch==7.1.0
-en-core-web-lg==2.2.5
-en-core-web-sm==2.2.5
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.5/en_core_web_sm-2.2.5.tar.gz
 et-xmlfile==1.0.1
 future==0.18.2
 idna==2.8
