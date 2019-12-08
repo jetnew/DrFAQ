@@ -1,5 +1,5 @@
 import pandas as pd
-from similarity import Match
+from match.similarity import Match
 
 
 class FAQ:
