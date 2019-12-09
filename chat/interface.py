@@ -8,8 +8,8 @@ class ChatInterface:
     def __init__(self):
         """Main Chat interface for Chatbot replies."""
         self.default = Default()
-        self.faq = FAQ("../match/FAQ.xlsx")
-        self.qa = QA("../nlp/Document.txt")
+        self.faq = FAQ("match/FAQ.xlsx")
+        self.qa = QA("nlp/Document.txt")
         self.search = Search()
 
     def default_reply(self, key):
