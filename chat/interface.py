@@ -10,7 +10,7 @@ class ChatInterface:
         self.default = Default()
         self.faq = FAQ("match/FAQ.xlsx")
         self.qa = QA("nlp/QACorpus.txt")
-        self.search = Search("search/SearchCorpus.txt")
+        # self.search = Search("search/SearchCorpus.txt")
 
     def default_reply(self, key):
         """Get default replies based on the key."""
@@ -31,13 +31,13 @@ class ChatInterface:
         if answer:
             print("Answer:", answer)
             return answer
-
-        # Phase 3: Search
-        print("Phase 3: Search")
-        answer = self.search.search(message)
-        if answer:
-            print("Answer:", answer)
-            return answer
+        #
+        # # Phase 3: Search
+        # print("Phase 3: Search")
+        # answer = self.search.search(message)
+        # if answer:
+        #     print("Answer:", answer)
+        #     return answer
         else:
             return "No content found."
 
