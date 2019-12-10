@@ -4,6 +4,7 @@
     <list default="true" id="94721f16-3905-4813-ac15-e0d85dc20492" name="Default Changelist" comment="Created README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chat/interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat/interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nlp/qa.py" beforeDir="false" afterPath="$PROJECT_DIR$/nlp/qa.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +143,7 @@
       <workItem from="1575815606336" duration="7374000" />
       <workItem from="1575858120056" duration="3101000" />
       <workItem from="1575905056651" duration="4074000" />
-      <workItem from="1575952539164" duration="4795000" />
+      <workItem from="1575952539164" duration="5515000" />
     </task>
     <servers />
   </component>
