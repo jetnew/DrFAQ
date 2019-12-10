@@ -1,4 +1,5 @@
 import time
+import os
 from telegram.ext import Updater
 from telegram.ext import CommandHandler
 from telegram.ext import MessageHandler, Filters
@@ -9,7 +10,9 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
                      level=logging.INFO)
 
 # Initialise
-updater = Updater(token=config.api_token, use_context=True)
+# updater = Updater(token=config.api_token, use_context=True)
+updater = Updater(token=os.environ['TOKEN'],
+                 use_context=True)
 
 # Set handlers
 dispatcher = updater.dispatcher
