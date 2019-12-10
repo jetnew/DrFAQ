@@ -9,8 +9,8 @@ class ChatInterface:
         """Main Chat interface for Chatbot replies."""
         self.default = Default()
         self.faq = FAQ("match/FAQ.xlsx")
-        self.qa = QA("nlp/Document.txt")
-        self.search = Search()
+        self.qa = QA("nlp/QACorpus.txt")
+        self.search = Search("search/SearchCorpus.txt")
 
     def default_reply(self, key):
         """Get default replies based on the key."""

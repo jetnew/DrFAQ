@@ -11,7 +11,7 @@ Ref: https://elasticsearch-py.readthedocs.io/en/master/
 
 
 class Search:
-    def __init__(self):
+    def __init__(self, text_file):
         # Local
         # self.elastic = Elasticsearch([{'host': 'localhost', 'port': 9200}])
 
@@ -43,6 +43,12 @@ class Search:
 
         # Instantiate the new Elasticsearch connection:
         self.elastic = Elasticsearch(es_header)
+
+        # Load search corpus into ElasticSearch
+        self.elastic.indices.create(index='default', ignore=400)
+        with open(text_file) as f:
+            for i, line in enumerate(f):
+                self.load(id=i, text=line)
 
     def load(self, id, text, verbose=False):
         """Loads documents in the format {'text': text}."""

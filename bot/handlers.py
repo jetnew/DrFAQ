@@ -5,7 +5,7 @@ from log.logger import Logger
 
 manual_faq = ManualFAQ()
 chat_interface = ChatInterface()
-logger = Logger("../log/logbook.xlsx")
+logger = Logger("log/logbook.xlsx")
 
 
 def start(update, context):
