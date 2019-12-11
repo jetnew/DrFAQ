@@ -1,5 +1,5 @@
 from chat.default import Default
-from match.faq import FAQ
+# from match.faq import FAQ
 # from nlp.qa import QA
 from search.elastic import Search
 
@@ -18,12 +18,12 @@ class ChatInterface:
 
     def reply(self, message):
         print("Message received:", message)
-        # Phase 1: FAQ Matching
-        print("Phase 1: FAQ Matching")
-        answer = self.faq.ask_faq(message, threshold=0.9)  # change to 0.9 for large model
-        if answer:
-            print("Answer:", answer)
-            return answer
+        # # Phase 1: FAQ Matching
+        # print("Phase 1: FAQ Matching")
+        # answer = self.faq.ask_faq(message, threshold=0.9)  # change to 0.9 for large model
+        # if answer:
+        #     print("Answer:", answer)
+        #     return answer
 
         # # Phase 2: NLP Question Answering
         # print("Phase 2: NLP Question Answering")

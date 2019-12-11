@@ -1,6 +1,5 @@
 import torch
 from transformers import BertTokenizer, BertForQuestionAnswering
-from transformers import AlbertTokenizer, AlbertForQuestionAnswering
 
 class QA:
     """
