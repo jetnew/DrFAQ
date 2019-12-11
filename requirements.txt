@@ -32,6 +32,7 @@ regex==2019.11.1
 requests==2.22.0
 s3transfer==0.2.1
 sacremoses==0.0.35
+scikit-learn==0.22
 sentencepiece==0.1.83
 six==1.13.0
 spacy==2.2.3

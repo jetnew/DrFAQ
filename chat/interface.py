@@ -9,8 +9,8 @@ class ChatInterface:
         """Main Chat interface for Chatbot replies."""
         self.default = Default()
         self.faq = FAQ("match/FAQ.xlsx")
-        self.qa = QA("nlp/QACorpus.txt")
-        # self.search = Search("search/SearchCorpus.txt")
+        # self.qa = QA("nlp/QACorpus.txt")
+        self.search = Search("search/SearchCorpus.txt")
 
     def default_reply(self, key):
         """Get default replies based on the key."""
@@ -25,19 +25,19 @@ class ChatInterface:
             print("Answer:", answer)
             return answer
 
-        # Phase 2: NLP Question Answering
-        print("Phase 2: NLP Question Answering")
-        answer = self.qa.ask(message, threshold=1.0)
-        if answer:
-            print("Answer:", answer)
-            return answer
-        #
-        # # Phase 3: Search
-        # print("Phase 3: Search")
-        # answer = self.search.search(message)
+        # # Phase 2: NLP Question Answering
+        # print("Phase 2: NLP Question Answering")
+        # answer = self.qa.ask(message, threshold=1.0)
         # if answer:
         #     print("Answer:", answer)
         #     return answer
+
+        # Phase 3: Search
+        print("Phase 3: Search")
+        answer = self.search.search(message)
+        if answer:
+            print("Answer:", answer)
+            return answer
         else:
             return "No content found."
 
