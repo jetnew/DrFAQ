@@ -5,9 +5,9 @@ class Match:
     """Ref: https://spacy.io/"""
     def __init__(self):
         """Load language model."""
-        spacy.prefer_gpu()
+        # spacy.prefer_gpu()
         # self.nlp = spacy.load("en_core_web_sm")
-        self.nlp = spacy.load("en_core_web_md")  # heroku limit of 500M
+        self.nlp = spacy.load("en_core_web_md")
         # self.nlp = spacy.load("en_core_web_lg") # Switch to large version for performance
 
     def compare(self, s1, s2):

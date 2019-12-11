@@ -1,6 +1,6 @@
 import torch
 from transformers import BertTokenizer, BertForQuestionAnswering
-import math
+
 
 class QA:
     """
@@ -21,6 +21,7 @@ class QA:
         """Ask question to QA."""
         score, answer = self.query(question)
         print("NLP score:", score)
+        print("Answer:", answer)
 
         if score > threshold:
             return answer
