@@ -1,6 +1,6 @@
 from chat.default import Default
 from match.faq import FAQ
-from nlp.qa import QA
+# from nlp.qa import QA
 from search.elastic import Search
 
 
