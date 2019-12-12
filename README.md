@@ -9,6 +9,7 @@
 <img src="https://user-images.githubusercontent.com/27071473/70677347-ea1d1480-1cc9-11ea-92ae-3c5c5025551a.png" width="700" height="700" />
 
 * Due to Heroku's free tier limits, only FAQ Question Matching using spaCy's Similarity and Answer Search using ElasticSearch functions are enabled.
+* Demo implemented with information from National University of Singapore's University Scholars Programme [website](http://www.usp.nus.edu.sg/).
 
 # Methodology
 When a question is asked, the following processes are performed:
