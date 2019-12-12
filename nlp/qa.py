@@ -11,7 +11,7 @@ class QA:
     """
     def __init__(self, text_file):
         self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-        self.model = BertForQuestionAnswering.from_pretrained('bert-base-uncased')
+        self.model = BertForQuestionAnswering.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')
 
         with open(text_file, 'r') as file:
             self.passage = file.read().replace('\n', ' ')
