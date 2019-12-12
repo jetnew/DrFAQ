@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="94721f16-3905-4813-ac15-e0d85dc20492" name="Default Changelist" comment="Created README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logbook.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/log/logbook.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/match/FAQ.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/match/FAQ.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nlp/QACorpus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/nlp/QACorpus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search/SearchCorpus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/search/SearchCorpus.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +148,7 @@
       <workItem from="1575952539164" duration="8569000" />
       <workItem from="1576034049042" duration="1846000" />
       <workItem from="1576047538351" duration="299000" />
-      <workItem from="1576047863942" duration="14451000" />
+      <workItem from="1576047863942" duration="15597000" />
     </task>
     <servers />
   </component>
