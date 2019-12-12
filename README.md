@@ -5,7 +5,7 @@
 # Objective
 * Given an organisation's corpus of documents, generate a chatbot to enable natural question-answering capabilities.
 
-# Demo - [t.me/DrFAQ_Bot](t.me/DrFAQ_Bot)
+# Demo - [t.me/DrFAQ_Bot](https://telegram.me/drfaq_bot)
 <img src="https://user-images.githubusercontent.com/27071473/70677347-ea1d1480-1cc9-11ea-92ae-3c5c5025551a.png" width="700" height="700" />
 
 * Due to Heroku's free tier limits, only FAQ Question Matching using spaCy's Similarity and Answer Search using ElasticSearch functions are enabled.
