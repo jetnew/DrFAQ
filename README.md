@@ -11,11 +11,11 @@ DrFAQ is a Question Answering NLP Chatbot for Text Document Corpora
 
 # Methodology
 When a question is asked, the following processes are performed:
-1. FAQ Question Matching using spaCy's Similarity
+1. FAQ Question Matching using spaCy's Similarity - [/match](/match)
     * From a given list of Frequently Asked Questions (FAQs), the chatbot detects similarity to the specified question and selects the best answer from the existing list.
-2. NLP Question Answering using huggingface's BERT
+2. NLP Question Answering using huggingface's BERT - [/nlp](/nlp)
     * If the question asked is dissimilar to any existing FAQs, perform question answering on the knowledge base and return a sufficiently confident answer.
-3. Answer Search using ElasticSearch
+3. Answer Search using ElasticSearch - [/search](/seach)
     * If the answer is not sufficiently confident, perform a search on the document corpus and return the search results.
 4. Human Intervention
     * If the search results are still not relevant, prompt a human to add the question-answer pair to the existing list of specified FAQs, or speak to a human.
