@@ -20,7 +20,7 @@ class ChatInterface:
         print("Message received:", message)
         # Phase 1: FAQ Matching
         print("Phase 1: FAQ Matching")
-        answer = self.faq.ask_faq(message, threshold=0.9)  # change to 0.9 for large model
+        answer = self.faq.ask_faq(message, threshold=0.95)  # change to 0.9 for large model
         if answer:
             print("Answer:", answer)
             return answer
