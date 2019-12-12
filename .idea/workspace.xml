@@ -4,6 +4,7 @@
     <list default="true" id="94721f16-3905-4813-ac15-e0d85dc20492" name="Default Changelist" comment="Created README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chat/interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat/interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/match/similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/match/similarity.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +146,7 @@
       <workItem from="1575952539164" duration="8569000" />
       <workItem from="1576034049042" duration="1846000" />
       <workItem from="1576047538351" duration="299000" />
-      <workItem from="1576047863942" duration="11262000" />
+      <workItem from="1576047863942" duration="11894000" />
     </task>
     <servers />
   </component>
