@@ -19,13 +19,10 @@ When a question is asked, the following processes are performed:
 4. Human Intervention
     * If the search results are still not relevant, prompt a human to add the question-answer pair to the existing list of specified FAQs, or speak to a human.
 
-# Tasks
-* Telegram Chatbot Hosting
-    * The Telegram Chatbot is currently deployed at [t.me/DrFAQ_Bot](t.me/DrFAQ_Bot) for demo purposes.
-    * Hosting is done by Heroku, and due to free tier limits, only FAQ question matching and ElasticSearch is enabled. Unfortunately, NLP question answering would exceed Heroku's free tier memory limit.
-
-
 # References
 * [explosion/spaCy](https://github.com/explosion/spaCy) - Industrial-strength Natural Language Processing (NLP) with Python and Cython
 * [huggingface/transformers](https://github.com/huggingface/transformers) - Transformers: State-of-the-art Natural Language Processing for TensorFlow 2.0 and Pytorch
 * [elastic/elasticsearch-py](https://github.com/elastic/elasticsearch-py) - Official Python low-level client for Elasticsearch
+* [python-telegram-bot/python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) - Python Wrapper for Telegram Bots
+* [google-research/bert](https://github.com/google-research/bert) - TensorFlow code and pre-trained models for BERT
+* [BERT](https://arxiv.org/abs/1810.04805) - Pre-training of Deep Bidirectional Transformers for Language Understanding
