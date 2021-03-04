@@ -3,7 +3,7 @@
 * Designed and implemented a NLP Question Answering architecture using spaCy, huggingface’s BERT language model, ElasticSearch, Telegram Bot API, and hosted on Heroku.
 
 # News
-* 4 Mar 2021 - Transfer learning of language models alongside evaluation study is currently in progress.
+* 4 Mar 2021 - Transfer learning of language models alongside evaluation study is currently [in progress](https://drive.google.com/file/d/1N6sBKZ57R7-JpyLWtuq_5ufc2mCuj5RF/view?usp=sharing).
 * 13 Dec 2019 - Implementation of 4-step question-answering methodology completed.
 
 # Objective
