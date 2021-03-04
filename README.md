@@ -1,15 +1,13 @@
 # DrFAQ
-* DrFAQ is a Question Answering NLP Chatbot for Text Document Corpora.
+* DrFAQ is a plug-and-play question answering chatbot that can be generally applied to any organiation's text corpora.
 * Designed and implemented a NLP Question Answering architecture using spaCy, huggingface’s BERT language model, ElasticSearch, Telegram Bot API, and hosted on Heroku.
+
+# News
+* 4 Mar 2021 - Transfer learning of language models alongside evaluation study is currently in progress.
+* 13 Dec 2019 - Implementation of 4-step question-answering methodology completed.
 
 # Objective
 * Given an organisation's corpus of documents, generate a chatbot to enable natural question-answering capabilities.
-
-# Demo - [t.me/DrFAQ_Bot](https://telegram.me/drfaq_bot)
-<img src="https://user-images.githubusercontent.com/27071473/70677347-ea1d1480-1cc9-11ea-92ae-3c5c5025551a.png" width="700" height="700" />
-
-* Due to Heroku's free tier limits, only FAQ Question Matching using spaCy's Similarity and Answer Search using ElasticSearch functions are enabled.
-* Demo implemented with information from National University of Singapore's University Scholars Programme [website](http://www.usp.nus.edu.sg/).
 
 # Methodology
 When a question is asked, the following processes are performed:
