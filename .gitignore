@@ -1,5 +1,2 @@
 telegram/config.py
-experimental/jet/aclmdb_v1.tar.gz
-experimental/jet/squad/
-experimental/jet/acllmdb/
-experimental/jet/my_mrpc_model/
+experimental/transfer/roberta/roberta-squad/
