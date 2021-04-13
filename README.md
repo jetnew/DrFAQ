@@ -20,6 +20,18 @@ When a question is asked, the following processes are performed:
 4. Human Intervention
     * If the search results are still not relevant, prompt a human to add the question-answer pair to the existing list of specified FAQs, or speak to a human.
 
+# Research
+* Dataset-independent transfer learning procedure is researched in a [benchmark study](https://drive.google.com/file/d/1N6sBKZ57R7-JpyLWtuq_5ufc2mCuj5RF/view?usp=sharing).
+   * If a large and clean QA dataset is available, RoBERTa is the best language model.
+   * If only a small and unclean generated QA dataset is available, MobileBERT is the best language model.
+   * If the QA dataset contains many 'Who' questions, RoBERTa should be considered.
+
+# Future Work
+* Release DrFAQ as a pip package.
+* Make an interactive demo available.
+* Integrate abstractive question-answering into the methodology.
+* Leverage databases and cloud services.
+
 # References
 * [explosion/spaCy](https://github.com/explosion/spaCy) - Industrial-strength Natural Language Processing (NLP) with Python and Cython
 * [huggingface/transformers](https://github.com/huggingface/transformers) - Transformers: State-of-the-art Natural Language Processing for TensorFlow 2.0 and Pytorch
