@@ -21,7 +21,7 @@ When a question is asked, the following processes are performed:
     * If the search results are still not relevant, prompt a human to add the question-answer pair to the existing list of specified FAQs, or speak to a human.
 
 # Research
-* Dataset-independent transfer learning procedure is researched in a [benchmark study](https://drive.google.com/file/d/1N6sBKZ57R7-JpyLWtuq_5ufc2mCuj5RF/view?usp=sharing).
+* Transfer learning of language models researched in a [benchmark study](https://drive.google.com/file/d/1N6sBKZ57R7-JpyLWtuq_5ufc2mCuj5RF/view?usp=sharing) shows that:
    * If a large and clean QA dataset is available, RoBERTa is the best language model.
    * If only a small and unclean generated QA dataset is available, MobileBERT is the best language model.
    * If the QA dataset contains many 'Who' questions, RoBERTa should be considered.
