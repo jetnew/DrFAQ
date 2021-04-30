@@ -44,7 +44,7 @@ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.5
 tornado==6.0.3
 tqdm==4.40.1
 transformers==2.2.1
-urllib3==1.25.7
+urllib3==1.25.8
 wasabi==0.4.2
 xlrd==1.2.0
 zipp==0.6.0
