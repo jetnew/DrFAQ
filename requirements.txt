@@ -18,7 +18,7 @@ jmespath==0.9.4
 joblib==0.14.0
 more-itertools==8.0.2
 murmurhash==1.0.2
-numpy==1.17.4
+numpy==1.21.0
 openpyxl==3.0.2
 pandas==0.25.3
 Pillow==9.0.0
